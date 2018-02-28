@@ -147,9 +147,7 @@ To check your existing configuration, run `npm config list -l`.
 
 [MIT](LICENSE) © [Kristian Mandrup](http://tecla5.com)
 
-##
-
-<a href="#"><img src="https://cdn.rawgit.com/fabriqjs/fabriq/e39cd571/media/fabriq-footer.png" alt="#" /></a>
+## Reference
 
 [eslint]: https://eslint.org/
 

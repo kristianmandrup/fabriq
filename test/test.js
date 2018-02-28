@@ -6,7 +6,7 @@ const spdxLicenseList = require('spdx-license-list/simple');
 const template = path.join(__dirname, '..');
 
 const defaults = {
-  name: 'lass',
+  name: 'fabriq',
   description: 'my project description',
   license: 'MIT',
   version: '0.0.1',
@@ -14,12 +14,12 @@ const defaults = {
   email: 'niftylettuce@gmail.com',
   website: 'http://niftylettuce.com',
   username: 'niftylettuce',
-  keywords: 'boilerplate,generator npm package lass'
+  keywords: 'boilerplate,generator npm package fabriq'
 };
 
 test('auto detects email address from github', async t => {
   const stream = await sao.mockPrompt(template, {
-    name: 'lass',
+    name: 'fabriq',
     description: 'test',
     license: 'MIT',
     version: '0.0.1',
@@ -38,7 +38,7 @@ test('allows SPDX licenses', async t => {
   };
   const license = getRandomLicense();
   const stream = await sao.mockPrompt(template, {
-    name: 'lass',
+    name: 'fabriq',
     description: 'test',
     license,
     version: '0.0.1',
@@ -161,7 +161,7 @@ test('invalid repo', async t => {
     sao.mockPrompt(
       template,
       Object.assign({}, defaults, {
-        username: 'lassjs',
+        username: 'fabriq',
         repo: 'https://bitbucket.org/foo/bar'
       })
     )
