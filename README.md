@@ -1,27 +1,18 @@
 <h1 align="center">
-  <a href="https://lass.js.org"><img src="https://cdn.rawgit.com/lassjs/lass/e39cd571/media/lass.png" alt="Lass" /></a>
+  Fabriq
 </h1>
 <div align="center">
   <a href="http://slack.crocodilejs.com"><img src="http://slack.crocodilejs.com/badge.svg" alt="chat" /></a>
-  <a href="https://semaphoreci.com/niftylettuce/lass"> <img src="https://semaphoreci.com/api/v1/niftylettuce/lass/branches/master/shields_badge.svg" alt="build status"></a>
-  <a href="https://codecov.io/github/lassjs/lass"><img src="https://img.shields.io/codecov/c/github/lassjs/lass/master.svg" alt="code coverage" /></a>
+  <a href="https://semaphoreci.com/niftylettuce/fabriq"> <img src="https://semaphoreci.com/api/v1/niftylettuce/fabriq/branches/master/shields_badge.svg" alt="build status"></a>
+  <a href="https://codecov.io/github/fabriqjs/fabriq"><img src="https://img.shields.io/codecov/c/github/fabriqjs/fabriq/master.svg" alt="code coverage" /></a>
   <a href="https://github.com/sindresorhus/xo"><img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg" alt="code style" /></a>
   <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg" alt="styled with prettier" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/lassjs/lass.svg" alt="license" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/fabriqjs/fabriq.svg" alt="license" /></a>
 </div>
 <br />
 <div align="center">
-  Lass scaffolds a modern package boilerplate for <a href="https://nodejs.org">Node.js</a>
+  Fabriq scaffolds a package boilerplate for a <a href="https://github.com/kristianmandrup/comptroller">Comptroller project</a>
 </div>
-
-<div align="center">
-  <sub>
-    A lass that fell in love with a <a href="https://lad.js.org"><strong>lad</strong></a>
-    &bull; Built by <a href="https://github.com/niftylettuce">@niftylettuce</a>
-    and <a href="#contributors">contributors</a>
-  </sub>
-</div>
-
 
 ## Table of Contents
 
@@ -41,7 +32,7 @@
 
 ## Features
 
-* Unit testing with [ava][]
+* Unit testing with [ava][] or [jest][]
 * Linting with [eslint][] (with an option to choose between [prettier][] and [xo][] or [standard][])
 * Markdown Linting with [remark][]
 * Automatic code formatting with [prettier][]
@@ -68,30 +59,35 @@
 
 ## Prerequisities
 
-Node.js v7.6.0+
+Node.js v8+
 
 
 ## Install
 
+Install `fabriq` as a `dev` dependency in your project
+
 [npm][]:
 
 ```sh
-npm install -g lass
+npm install fabriq -D
 ```
 
 [yarn][]:
 
 ```sh
-yarn global add lass
+yarn add fabriq -D
 ```
 
+Use `npx` to run `fabriq`
+
+`$ npx fabriq`
 
 ## Usage
 
 ### Create a package
 
 ```sh
-lass new-package
+fabriq new-package
 cd new-package
 ```
 
@@ -119,20 +115,21 @@ You should configure [npm init defaults][npm-init-defaults] before using this pa
 Run the following commands and replace the values below with your own:
 
 ```bash
-npm config set init-author-email "niftylettuce@gmail.com"
-npm config set init-author-name "Nick Baugh"
-npm config set init-author-url "http://niftylettuce.com"
+npm config set init-author-email "my-email@gmail.com"
+npm config set init-author-name "John Doe"
+npm config set init-author-url "http://john-doe.com"
 npm config set init-license "MIT"
 npm config set init-version "0.0.1"
 ```
 
-These defaults get utilized by `lass` when scaffolding a package and `npm init` in general.
+These defaults get utilized by `fabriq` when scaffolding a package and `npm init` in general.
 
 To check your existing configuration, run `npm config list -l`.
 
 
 ## Related
 
+* [lass][] - Scaffold a boilerplate for [Node.js][node]
 * [lad][] - Scaffold a [Koa][] webapp and API framework for [Node.js][node]
 * [lipo][] - Free image manipulation API service built on top of [Sharp][]
 * [cabin][] - Logging and analytics solution for [Node.js][node], [Lad][], [Koa][], and [Express][]
@@ -146,21 +143,13 @@ To check your existing configuration, run `npm config list -l`.
 | **Pablo Varela** | <http://pablo.life>       |
 
 
-## Trademark Notice
-
-Lass, Lad, Cabin, Lipo, and their respective logos are trademarks of Niftylettuce LLC.
-These trademarks may not be reproduced, distributed, transmitted, or otherwise used, except with the prior written permission of Niftylettuce LLC.
-If you are seeking permission to use these trademarks, then please [contact us](mailto:niftylettuce@gmail.com).
-
-
 ## License
 
-[MIT](LICENSE) © [Nick Baugh](http://niftylettuce.com)
+[MIT](LICENSE) © [Kristian Mandrup](http://tecla5.com)
 
+##
 
-## 
-
-<a href="#"><img src="https://cdn.rawgit.com/lassjs/lass/e39cd571/media/lass-footer.png" alt="#" /></a>
+<a href="#"><img src="https://cdn.rawgit.com/fabriqjs/fabriq/e39cd571/media/fabriq-footer.png" alt="#" /></a>
 
 [eslint]: https://eslint.org/
 
@@ -181,6 +170,8 @@ If you are seeking permission to use these trademarks, then please [contact us](
 [remark]: https://github.com/wooorm/remark
 
 [remark-contributors]: https://github.com/hughsk/remark-contributors
+
+[lass]: https://lass.js.org
 
 [lad]: https://lad.js.org
 

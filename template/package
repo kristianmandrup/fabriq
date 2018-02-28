@@ -10,13 +10,16 @@
   },
   "contributors": ["<%- author %> <<%- email %>> (<%- website%>)"],
   "dependencies": {},
+  <% if (test === 'ava') { %>
   "ava": {
     "failFast": true,
     "verbose": true
   },
+  <% } %>
   "devDependencies": {
-    "auto-bind": "^1.1.0",
+    <% if (test === 'ava') { %>
     "ava": "^0.22.0",
+    <% } %>
     "codecov": "^2.3.0",
     "cross-env": "^5.0.5",
     "eslint": "^4.5.0",

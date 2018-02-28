@@ -1,9 +1,5 @@
 #!/usr/bin/env node
 
-// Inspired by:
-// <https://github.com/saojs/sao/issues/50>
-// <https://github.com/nuxt-community/create-nuxt-app/blob/master/packages/create-nuxt-app/package.json>
-
 const path = require('path');
 const cac = require('cac');
 const sao = require('sao');
@@ -20,6 +16,7 @@ cli.command('*', 'Generate a new package', input => {
 
   const templatePath = path.dirname(require.resolve('./package'));
 
+  // root
   return sao({
     template: templatePath,
     targetPath
@@ -28,4 +25,6 @@ cli.command('*', 'Generate a new package', input => {
 
 cli.parse();
 
-update({ pkg }).notify();
+update({
+  pkg
+}).notify();

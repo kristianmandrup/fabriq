@@ -1,8 +1,8 @@
 {
-  "name": "lass",
-  "description": "Lass scaffolds a modern package boilerplate for Node.js",
+  "name": "fabriq",
+  "description": "Fabric scaffolds a package boilerplate for Comptroller",
   "version": "0.3.5",
-  "author": "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com)",
+  "author": "Kristian Mandrup <kmandrup@gmail.com>",
   "bin": "cli.js",
   "ava": {
     "failFast": true,
@@ -21,15 +21,11 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/lassjs/lass/issues",
-    "email": "niftylettuce@gmail.com"
+    "url": "https://github.com/tecla5/fabriq/issues",
+    "email": "kmandrup@gmail.com"
   },
-  "contributors": [
-    "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com)",
-    "Pablo Varela (http://pablo.life)"
-  ],
+  "contributors": [],
   "dependencies": {
-    "auto-bind": "^1.1.0",
     "cac": "^4.2.4",
     "camelcase": "^4.1.0",
     "execa": "^0.8.0",
@@ -40,6 +36,7 @@
     "is-url": "^1.2.2",
     "is-valid-npm-name": "^0.0.4",
     "npm-conf": "^1.1.3",
+    "project-template": "github:kristianmandrup/project-template",
     "sao": "^0.22.9",
     "semver": "^5.4.1",
     "spdx-license-list": "^3.0.1",
@@ -67,7 +64,7 @@
   "engines": {
     "node": ">=7.6.0"
   },
-  "homepage": "https://lass.js.org",
+  "homepage": "https://http://www.tecla5.com/",
   "keywords": [
     "ava",
     "boilerplate",
@@ -78,7 +75,6 @@
     "generator",
     "gfm",
     "github",
-    "lass",
     "license",
     "license-generator",
     "markdown",
@@ -103,18 +99,27 @@
       "prettier --write --single-quote --trailing-comma none",
       "git add"
     ],
-    "*.md": ["remark . -qfo", "git add"]
+    "*.md": [
+      "remark . -qfo",
+      "git add"
+    ]
   },
   "main": "sao.js",
   "nyc": {
-    "reporter": ["lcov", "html", "text"]
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ]
   },
   "remarkConfig": {
-    "plugins": ["preset-github"]
+    "plugins": [
+      "preset-github"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lassjs/lass"
+    "url": "https://github.com/tecla5/fabriq"
   },
   "scripts": {
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
@@ -125,7 +130,9 @@
   },
   "xo": {
     "extends": "prettier",
-    "plugins": ["prettier"],
+    "plugins": [
+      "prettier"
+    ],
     "parserOptions": {
       "sourceType": "script"
     },
@@ -150,6 +157,8 @@
       "no-warning-comments": "off"
     },
     "space": true,
-    "ignores": ["config.js"]
+    "ignores": [
+      "config.js"
+    ]
   }
 }

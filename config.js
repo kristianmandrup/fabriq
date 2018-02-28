@@ -1,15 +1,13 @@
 docute.init({
   debug: true,
-  title: 'Lass',
-  repo: 'lassjs/lass',
-  'edit-link': 'https://github.com/lassjs/lass/tree/master/',
-  twitter: 'niftylettuce',
+  title: 'Fabriq',
+  repo: 'tecla5/fabriq',
+  'edit-link': 'https://github.com/tecla5/fabriq/tree/master/',
+  twitter: 'kmandrup',
   nav: {
-    default: [
-      {
-        title: 'Scaffold a modern package boilerplate for Node.js',
-        path: '/'
-      }
-    ]
+    default: [{
+      title: 'Scaffold a package boilerplate for Comptroller',
+      path: '/'
+    }]
   }
 });
